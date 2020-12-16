@@ -1,15 +1,11 @@
 #include <iostream>
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
-
 	if (argc > 1)
 	{
-		i = 1;
-		while (i < argc)
+		for (int i = 1; i < argc; i++)
 		{
-			j = 0;
+			int j = 0;
 			while (argv[i][j])
 			{
 				if (argv[i][j] >= 97 && argv[i][j] <= 123)
@@ -17,11 +13,8 @@ int main(int argc, char *argv[])
 				std::cout << argv[i][j];
 				j++;
 			}
-			i++;
 		}
-		std::cout << "\n";
+		std::cout << std::endl;
 	} else
-	{
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *\n";
-	}
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 }
