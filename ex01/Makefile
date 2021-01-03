@@ -16,7 +16,6 @@ $(NAME):
 		@clang++ -o $(NAME) $(SRCS) $(HEADER) $(FLAGS)
 		@echo "\x1b[34m day 00 ex00 is ready\x1b[0m"
 
-
 clean:
 			@rm -rf $(OBJS)
 

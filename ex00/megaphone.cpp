@@ -1,4 +1,5 @@
 #include <iostream>
+#include "string"
 int main(int argc, char *argv[])
 {
 	if (argc > 1)
@@ -8,7 +9,7 @@ int main(int argc, char *argv[])
 			int j = 0;
 			while (argv[i][j])
 			{
-				if (argv[i][j] >= 97 && argv[i][j] <= 123)
+				if ( islower((int)argv[i][j]))
 					argv[i][j] -= 32;
 				std::cout << argv[i][j];
 				j++;

@@ -2,11 +2,8 @@
 #include <iostream>
 
 //оформить по красоте все что у меня тут есть, вычистить говнокод
-//проверить мейкфайл
-//проблемы с вводом, бывают косяки типа начали вводить и поставили пробел в
-// адд. а второй раз не новая запись а продолжение и возможно это не косяк а
-// фишка но придется это доказать
-//местами ужасное поведение
+//проблемы с вводом, бывают косяки типа начали вводить и поставили пробел.
+// когда должен заканчиваться ввод?
 
 
 Contact addNew()
@@ -53,7 +50,7 @@ Contact addNew()
 void Search(Contact contacts[8], int i)
 {
 	std::string str;
-	int index;
+	int index = 0;
 	for (int j = 0; j < i; j++)
 	{
 		std::cout << std::setw(10) << j + 1 << '|';
@@ -74,11 +71,22 @@ void Search(Contact contacts[8], int i)
 		std::cout << '|' << std::endl;
 	}
 	getline(std::cin, str);
-	index = std::stoi(str);
+	if (str.at(0) >= '1' && str.at(0) <= '8')
+		index = std::stoi(str);
+	else
+	{
+		std::cout << "Error search1" << std::endl;
+		return ;
+	}
+
 	if (index > 0 && index < 9)
 	{
 		if (index > i)
-			std::cout << "Error" << std::endl;
+		{
+			std::cout << "Error search2" << std::endl;
+			return ;
+		}
+
 		else
 		{
 			std::cout << "First name: " << contacts[index - 1].get_firstName()
@@ -96,7 +104,7 @@ void Search(Contact contacts[8], int i)
 		}
 	}
 	else
-		std::cout << "Error search" << std::endl;
+		std::cout << "Error search3" << std::endl;
 }
 
 int main()
