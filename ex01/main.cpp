@@ -1,13 +1,12 @@
 #include "Contact.hpp"
 #include <iostream>
 
-using namespace std; //убрать!!!!!!!
-//сделать вывод записи по индексу
 //оформить по красоте все что у меня тут есть, вычистить говнокод
 //проверить мейкфайл
-//проверить разные странные поведения
-//добавить проверку как минимум на то, что будет если данные о контакте ввели
-// не все. он должен отобразиться? вроде нет
+//проблемы с вводом, бывают косяки типа начали вводить и поставили пробел в
+// адд. а второй раз не новая запись а продолжение и возможно это не косяк а
+// фишка но придется это доказать
+//местами ужасное поведение
 
 
 Contact addNew()
@@ -51,22 +50,61 @@ Contact addNew()
 	return (add);
 }
 
-void Search(int amount, Contact a)
+void Search(Contact contacts[8], int i)
 {
-	for (int i = 0; i < amount; i++)
+	std::string str;
+	int index;
+	for (int j = 0; j < i; j++)
 	{
-		std::cout << a.get_firstName() << a.get_lastName() << a.get_nickname();
+		std::cout << std::setw(10) << j + 1 << '|';
+		if (contacts[j].get_firstName().length() > 9)
+			std::cout << std::setw(9) << contacts[j].get_firstName().substr(0, 9) << '.';
+		else
+			std::cout << std::setw(10) << contacts[j].get_firstName();
+		std::cout << '|';
+		if (contacts[j].get_lastName().length() > 9)
+			std::cout << std::setw(9) << contacts[j].get_lastName().substr(0, 9) << '.';
+		else
+			std::cout << std::setw(10) << contacts[j].get_lastName();
+		std::cout << '|';
+		if (contacts[j].get_nickname().length() > 9)
+			std::cout << std::setw(9) << contacts[j].get_nickname().substr(0, 9) << '.';
+		else
+			std::cout << std::setw(10) << contacts[j].get_nickname();
+		std::cout << '|' << std::endl;
 	}
+	getline(std::cin, str);
+	index = std::stoi(str);
+	if (index > 0 && index < 9)
+	{
+		if (index > i)
+			std::cout << "Error" << std::endl;
+		else
+		{
+			std::cout << "First name: " << contacts[index - 1].get_firstName()
+			<< std::endl;
+			std::cout << "Last name: " << contacts[index - 1].get_lastName() << std::endl;;
+			std::cout << "Nickname: " << contacts[index - 1].get_nickname() << std::endl;;
+			std::cout << "Login: " << contacts[index - 1].get_login() << std::endl;;
+			std::cout << "Postal address: " << contacts[index - 1].get_postalAddress() << std::endl;;
+			std::cout << "Email address: " << contacts[index - 1].get_emailAddress() << std::endl;;
+			std::cout << "Phone number: " << contacts[index - 1].get_phoneNumber() << std::endl;;
+			std::cout << "Birthday date: " << contacts[index - 1].get_birthdayDate() << std::endl;;
+			std::cout << "Favorite meal: " << contacts[index - 1].get_favoriteMeal() << std::endl;;
+			std::cout << "Underwear color: " << contacts[index - 1].get_underwearColor() << std::endl;;
+			std::cout << "Darkest secret: " << contacts[index - 1].get_darkestSecret() << std::endl;;
+		}
+	}
+	else
+		std::cout << "Error search" << std::endl;
 }
 
 int main()
 {
-	setlocale(LC_ALL, "Ru");
+	setlocale(LC_ALL, "Ru"); //убрать и перевести на английский
 	std::string input_command;
 	int i = 0;
 	Contact contacts[8]; //всего восемь контактов
-	Contact add;
-	std::string input;
 	//getline(std::cin, input_command, '\n');
 	while (true)
 	{
@@ -74,38 +112,20 @@ int main()
 			break;
 		if (input_command == "ADD")
 		{
-			//сделать так чтобы поля можно было не заполнять и пропустить и
-			// оставить пробел
+			//сделать так чтобы поля можно было не заполнять и пропустить, оставить пробел
 			//убрать восьмерку и поставить на ее место глобальную переменную
-			// например
+			// вдруг я захочу больше контактов добавить
 			if (i < 8)
 			{
 				contacts[i] = addNew();
 				i++;
-				//добавить контакт
 			}
 			else
 				std::cout << "грустное сообщение о том, что место закончилось" << std::endl;
 		}
 		else if (input_command == "SEARCH")
-		{
-			//сделать одну функцию и положить ее сюда вместо этих
-			// нагромождений. substr поможет?
-			for (int j = 0; j < i; j++)
-			{
-				//обрезать строку и поставить последний отображаемый символ '.'
-				std::cout << '|' << std::setw(10) << j << '|' << std::setw
-				(10) << contacts[j].get_firstName()  << '|' << std::setw(10)
-				<< contacts[j].get_lastName() << '|' << std::setw(10) <<
-				contacts[j].get_nickname() << '|' << std::endl;
-			}
-
-		}
+			Search(contacts, i);
 		else if (input_command == "EXIT")
-		{
-			std::cout << "it is exit" << std::endl;
 			break;
-		}
-
 	}
 }
