@@ -1,8 +1,10 @@
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
+
 #include <iostream>
 #include <string>
 #include <iomanip>
+
 class Contact
 {
 public:
@@ -43,4 +45,8 @@ private:
 	std::string underwearColor;
 	std::string darkestSecret;
 };
+
+Contact addNew();
+void search(Contact contacts[8], int i);
+
 #endif

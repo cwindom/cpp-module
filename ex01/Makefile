@@ -2,7 +2,7 @@
 
 NAME = phonebook
 
-SRCS = main.cpp Contact.cpp
+SRCS = main.cpp Contact.cpp addNew.cpp search.cpp
 
 HEADERS = Contact.hpp
 
