@@ -38,6 +38,7 @@ Contact addNew()
 	std::cout << "Darkest secret: ";
 	std::cin >> input;
 	add.set_darkestSecret(input);
+	std::cout << "Successfully added!" << std::endl;
 	return (add);
 }
 

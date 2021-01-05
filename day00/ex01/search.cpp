@@ -2,6 +2,7 @@
 
 static void printAll(Contact contacts[8], int i)
 {
+	int tmp = 0;
 	std::cout << std::setw(10) << "index" << '|';
 	std::cout << std::setw(10) << "first name" << '|';
 	std::cout << std::setw(10) << "last name" << '|';
@@ -9,7 +10,8 @@ static void printAll(Contact contacts[8], int i)
 
 	for (int j = 0; j < i; j++)
 	{
-		std::cout << std::setw(10) << j + 1 << '|';
+		tmp = j + 1;
+		std::cout << std::setw(10) << tmp << '|';
 		if (contacts[j].get_firstName().length() > 9)
 			std::cout << std::setw(9) << contacts[j].get_firstName().substr(0, 9) << '.';
 		else
@@ -47,6 +49,7 @@ void search(Contact contacts[8], int i, int flag)
 {
 	std::string str;
 	int index = 0;
+	int p;
 	if (!flag)
 	{
 		std::cout << "There is no contact, sorry" << std::endl;
@@ -55,12 +58,17 @@ void search(Contact contacts[8], int i, int flag)
 	}
 	printAll(contacts, i);
 	getline(std::cin, str);
-	if (str.at(0) >= '1' && str.at(0) <= '8' && str.length() == 1)
-		index = std::stoi(str);
+	int scan = std::sscanf( str.c_str(), "%d", &p);
+	if (scan == 0 || scan == -1)
+	{
+		std::cout << "Oh no :( You must enter a digit" << std::endl;
+		return ;
+	}
+	if (p > 8)
+		p = 100;
 	else
 	{
-		std::cout << "Oh no :( Error search" << std::endl;
-		return ;
+		index = std::stoi(str);
 	}
 	if (index > 0 && index < 9)
 	{
