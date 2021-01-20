@@ -143,6 +143,87 @@ ex02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/build
 .PHONY : ex02/fast
 
+ClapTrap.o: ClapTrap.cpp.o
+
+.PHONY : ClapTrap.o
+
+# target to build an object file
+ClapTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ClapTrap.cpp.o
+.PHONY : ClapTrap.cpp.o
+
+ClapTrap.i: ClapTrap.cpp.i
+
+.PHONY : ClapTrap.i
+
+# target to preprocess a source file
+ClapTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ClapTrap.cpp.i
+.PHONY : ClapTrap.cpp.i
+
+ClapTrap.s: ClapTrap.cpp.s
+
+.PHONY : ClapTrap.s
+
+# target to generate assembly for a file
+ClapTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ClapTrap.cpp.s
+.PHONY : ClapTrap.cpp.s
+
+FragTrap.o: FragTrap.cpp.o
+
+.PHONY : FragTrap.o
+
+# target to build an object file
+FragTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/FragTrap.cpp.o
+.PHONY : FragTrap.cpp.o
+
+FragTrap.i: FragTrap.cpp.i
+
+.PHONY : FragTrap.i
+
+# target to preprocess a source file
+FragTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/FragTrap.cpp.i
+.PHONY : FragTrap.cpp.i
+
+FragTrap.s: FragTrap.cpp.s
+
+.PHONY : FragTrap.s
+
+# target to generate assembly for a file
+FragTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/FragTrap.cpp.s
+.PHONY : FragTrap.cpp.s
+
+ScavTrap.o: ScavTrap.cpp.o
+
+.PHONY : ScavTrap.o
+
+# target to build an object file
+ScavTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ScavTrap.cpp.o
+.PHONY : ScavTrap.cpp.o
+
+ScavTrap.i: ScavTrap.cpp.i
+
+.PHONY : ScavTrap.i
+
+# target to preprocess a source file
+ScavTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ScavTrap.cpp.i
+.PHONY : ScavTrap.cpp.i
+
+ScavTrap.s: ScavTrap.cpp.s
+
+.PHONY : ScavTrap.s
+
+# target to generate assembly for a file
+ScavTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ScavTrap.cpp.s
+.PHONY : ScavTrap.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +260,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ex02"
+	@echo "... ClapTrap.o"
+	@echo "... ClapTrap.i"
+	@echo "... ClapTrap.s"
+	@echo "... FragTrap.o"
+	@echo "... FragTrap.i"
+	@echo "... FragTrap.s"
+	@echo "... ScavTrap.o"
+	@echo "... ScavTrap.i"
+	@echo "... ScavTrap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -37,6 +37,19 @@ FragTrap::~FragTrap()
 
 }
 
+FragTrap::FragTrap(const FragTrap &copy): _name(copy._name)
+{
+	this->_name = copy._name;
+	this->_hitPoints = copy._hitPoints;
+	this->_maxHitPoints = copy._maxHitPoints;
+	this->_energyPoints = copy._energyPoints;
+	this->_maxEnergyPoints = copy._maxEnergyPoints;
+	this->_level = copy._level;
+	this->_meleeAttackDamage = copy._meleeAttackDamage;
+	this->_rangedAttackDamage = copy._rangedAttackDamage;
+	this->_armorDamageReduction = copy._armorDamageReduction;
+}
+
 FragTrap & FragTrap::operator=(const FragTrap &op)
 {
 	this->_name = op._name;

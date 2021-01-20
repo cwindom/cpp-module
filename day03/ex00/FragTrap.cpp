@@ -18,7 +18,7 @@ FragTrap::FragTrap()
 	std::cout << "I'm over here! (created)" << std::endl << std::endl;;
 }
 
-FragTrap::FragTrap(std::string name): _name(name)
+FragTrap::FragTrap(std::string const name): _name(name)
 {
 	this->_hitPoints = 100;
 	this->_maxHitPoints = 100;
@@ -35,6 +35,19 @@ FragTrap::~FragTrap()
 {
 	std::cout << this->_name << " \"I can see... the code\" (killed)" << std::endl;
 
+}
+
+FragTrap::FragTrap(const FragTrap &copy): _name(copy._name)
+{
+	this->_name = copy._name;
+	this->_hitPoints = copy._hitPoints;
+	this->_maxHitPoints = copy._maxHitPoints;
+	this->_energyPoints = copy._energyPoints;
+	this->_maxEnergyPoints = copy._maxEnergyPoints;
+	this->_level = copy._level;
+	this->_meleeAttackDamage = copy._meleeAttackDamage;
+	this->_rangedAttackDamage = copy._rangedAttackDamage;
+	this->_armorDamageReduction = copy._armorDamageReduction;
 }
 
 FragTrap & FragTrap::operator=(const FragTrap &op)

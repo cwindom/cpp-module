@@ -90,17 +90,62 @@ CMakeFiles/ex02.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex02.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Desktop/cpp-module/day03/ex02/main.cpp -o CMakeFiles/ex02.dir/main.cpp.s
 
+CMakeFiles/ex02.dir/FragTrap.cpp.o: CMakeFiles/ex02.dir/flags.make
+CMakeFiles/ex02.dir/FragTrap.cpp.o: ../FragTrap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/maria/Desktop/cpp-module/day03/ex02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex02.dir/FragTrap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex02.dir/FragTrap.cpp.o -c /Users/maria/Desktop/cpp-module/day03/ex02/FragTrap.cpp
+
+CMakeFiles/ex02.dir/FragTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex02.dir/FragTrap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Desktop/cpp-module/day03/ex02/FragTrap.cpp > CMakeFiles/ex02.dir/FragTrap.cpp.i
+
+CMakeFiles/ex02.dir/FragTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex02.dir/FragTrap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Desktop/cpp-module/day03/ex02/FragTrap.cpp -o CMakeFiles/ex02.dir/FragTrap.cpp.s
+
+CMakeFiles/ex02.dir/ScavTrap.cpp.o: CMakeFiles/ex02.dir/flags.make
+CMakeFiles/ex02.dir/ScavTrap.cpp.o: ../ScavTrap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/maria/Desktop/cpp-module/day03/ex02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex02.dir/ScavTrap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex02.dir/ScavTrap.cpp.o -c /Users/maria/Desktop/cpp-module/day03/ex02/ScavTrap.cpp
+
+CMakeFiles/ex02.dir/ScavTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex02.dir/ScavTrap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Desktop/cpp-module/day03/ex02/ScavTrap.cpp > CMakeFiles/ex02.dir/ScavTrap.cpp.i
+
+CMakeFiles/ex02.dir/ScavTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex02.dir/ScavTrap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Desktop/cpp-module/day03/ex02/ScavTrap.cpp -o CMakeFiles/ex02.dir/ScavTrap.cpp.s
+
+CMakeFiles/ex02.dir/ClapTrap.cpp.o: CMakeFiles/ex02.dir/flags.make
+CMakeFiles/ex02.dir/ClapTrap.cpp.o: ../ClapTrap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/maria/Desktop/cpp-module/day03/ex02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex02.dir/ClapTrap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex02.dir/ClapTrap.cpp.o -c /Users/maria/Desktop/cpp-module/day03/ex02/ClapTrap.cpp
+
+CMakeFiles/ex02.dir/ClapTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex02.dir/ClapTrap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Desktop/cpp-module/day03/ex02/ClapTrap.cpp > CMakeFiles/ex02.dir/ClapTrap.cpp.i
+
+CMakeFiles/ex02.dir/ClapTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex02.dir/ClapTrap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Desktop/cpp-module/day03/ex02/ClapTrap.cpp -o CMakeFiles/ex02.dir/ClapTrap.cpp.s
+
 # Object files for target ex02
 ex02_OBJECTS = \
-"CMakeFiles/ex02.dir/main.cpp.o"
+"CMakeFiles/ex02.dir/main.cpp.o" \
+"CMakeFiles/ex02.dir/FragTrap.cpp.o" \
+"CMakeFiles/ex02.dir/ScavTrap.cpp.o" \
+"CMakeFiles/ex02.dir/ClapTrap.cpp.o"
 
 # External object files for target ex02
 ex02_EXTERNAL_OBJECTS =
 
 ex02: CMakeFiles/ex02.dir/main.cpp.o
+ex02: CMakeFiles/ex02.dir/FragTrap.cpp.o
+ex02: CMakeFiles/ex02.dir/ScavTrap.cpp.o
+ex02: CMakeFiles/ex02.dir/ClapTrap.cpp.o
 ex02: CMakeFiles/ex02.dir/build.make
 ex02: CMakeFiles/ex02.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/maria/Desktop/cpp-module/day03/ex02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ex02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/maria/Desktop/cpp-module/day03/ex02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ex02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex02.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
