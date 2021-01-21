@@ -80,6 +80,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/ClapTrap.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/ClapTrap.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/FragTrap.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/FragTrap.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/NinjaTrap.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/NinjaTrap.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/ScavTrap.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/ScavTrap.hpp">
+			<Option target="ex03"/>
+		</Unit>
 		<Unit filename="/Users/maria/Desktop/cpp-module/day03/ex03/main.cpp">
 			<Option target="ex03"/>
 		</Unit>

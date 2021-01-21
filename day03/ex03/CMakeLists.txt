@@ -3,4 +3,5 @@ project(ex03)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(ex03 main.cpp ClapTrap.hpp FragTrap.hpp ScavTrap.hpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp)
+
+add_executable(ex03 main.cpp ClapTrap.hpp FragTrap.hpp ScavTrap.hpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp NinjaTrap.cpp NinjaTrap.hpp)
