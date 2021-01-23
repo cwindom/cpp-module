@@ -8,7 +8,6 @@
 int main()
 {
 	SuperTrap super("PUPER");
-	//здесь почему-то не работает. посмотреть почему. это последнее что осталось сделать с этим упражнением
 	super.rangedAttack("oh");
 	super.meleeAttack("ah");
 

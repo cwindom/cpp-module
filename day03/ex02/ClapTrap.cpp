@@ -16,6 +16,7 @@ ClapTrap::ClapTrap()
 	this->_meleeAttackDamage = 50;
 	this->_rangedAttackDamage = 50;
 	this->_armorDamageReduction = 10;
+	std::cout << "---------- ClapTrap default constructor called----------" << std::endl;
 	std::cout << "#ClapTrap# (created)" << std::endl << std::endl;;
 }
 
@@ -30,6 +31,7 @@ ClapTrap::ClapTrap(std::string const name): _name(name)
 	this->_meleeAttackDamage = 50;
 	this->_rangedAttackDamage = 50;
 	this->_armorDamageReduction = 10;
+	std::cout << "---------- ClapTrap constructor called----------" << std::endl;
 	std::cout << "#ClapTrap# \"My name is " << this->_name << "\" (created)" << std::endl << std::endl;;
 }
 
@@ -45,10 +47,12 @@ ClapTrap::ClapTrap(const ClapTrap &copy): _name(copy._name)
 	this->_meleeAttackDamage = copy._meleeAttackDamage;
 	this->_rangedAttackDamage = copy._rangedAttackDamage;
 	this->_armorDamageReduction = copy._armorDamageReduction;
+	std::cout << "---------- ClapTrap copy constructor called----------" << std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
+	std::cout << "---------- ClapTrap destructor called----------" << std::endl;
 	std::cout << this->_name << " #ClapTrap# (killed)" << std::endl;
 
 }
@@ -64,6 +68,7 @@ ClapTrap & ClapTrap::operator=(const ClapTrap &op)
 	this->_meleeAttackDamage = op._meleeAttackDamage;
 	this->_rangedAttackDamage = op._rangedAttackDamage;
 	this->_armorDamageReduction = op._armorDamageReduction;
+	std::cout << "---------- ClapTrap operator= called----------" << std::endl;
 	return *this;
 }
 

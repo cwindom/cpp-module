@@ -22,13 +22,18 @@ int main()
 //	b.beRepaired(10);
 //	a.vaulthunter_dot_exe("Badass");
 //	b.challengeNewcomer();
+	NinjaTrap nin("Kiiiaaa");
+	nin.rangedAttack("Psycho");
+	nin.meleeAttack("Bruiser");
+	nin.takeDamage(100);
+	nin.beRepaired(10);
 	ClapTrap test("1");
 	ScavTrap test1("2");
 	FragTrap test2("3");
-	NinjaTrap a("4");
-	a.ninjaShoebox(test);
-	a.ninjaShoebox(test1);
-	a.ninjaShoebox(test2);
-	a.ninjaShoebox(a);
+	NinjaTrap test3("4");
+	test3.ninjaShoebox(test);
+	test3.ninjaShoebox(test1);
+	test3.ninjaShoebox(test2);
+	test3.ninjaShoebox(test3);
 	return 0;
 }

@@ -30,7 +30,7 @@ ClapTrap::ClapTrap(std::string const name): _name(name)
 	this->_meleeAttackDamage = 50;
 	this->_rangedAttackDamage = 50;
 	this->_armorDamageReduction = 10;
-	std::cout << "#ClapTrap# \"My name is " << this->_name << "\" (created)" << std::endl << std::endl;;
+	std::cout << "#ClapTrap# \"My name is " << this->_name << "\" (created)" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &copy): _name(copy._name)

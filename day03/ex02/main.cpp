@@ -4,11 +4,11 @@
 #include "ClapTrap.hpp"
 int main()
 {
-	ClapTrap clapp("Main");
-	clapp.rangedAttack("Psycho");
-	clapp.meleeAttack("Bruiser");
-	clapp.takeDamage(100);
-	clapp.beRepaired(10);
+//	ClapTrap clapp("Main");
+//	clapp.rangedAttack("Psycho");
+//	clapp.meleeAttack("Bruiser");
+//	clapp.takeDamage(100);
+//	clapp.beRepaired(10);
 	FragTrap a("Pandora");
 	ScavTrap b("Skelly");
 	a.rangedAttack("Psycho");

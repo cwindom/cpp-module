@@ -14,12 +14,12 @@ NinjaTrap::NinjaTrap()
 	this->_meleeAttackDamage = 60;
 	this->_rangedAttackDamage = 5;
 	this->_armorDamageReduction = 0;
-	std::cout << "NinjaTrap" << std::endl;
-	std::cout << "I'm over here! (created)" << std::endl << std::endl;;
+	std::cout << "NinjaTrap constructor is called, name is " << this->_name  << std::endl <<std::endl;
 }
 
 NinjaTrap::NinjaTrap(std::string const name): ClapTrap(name)
 {
+	std::cout << "NinjaTrap constructor is called, name is " << this->_name  << std::endl;
 	this->_hitPoints = 60;
 	this->_maxHitPoints = 60;
 	this->_energyPoints = 120;
@@ -27,21 +27,32 @@ NinjaTrap::NinjaTrap(std::string const name): ClapTrap(name)
 	this->_meleeAttackDamage = 60;
 	this->_rangedAttackDamage = 5;
 	this->_armorDamageReduction = 0;
-	std::cout << "NinjaTrap" << std::endl;
-	std::cout << "\"So fresh, so clean/ My name is " << this->_name << "\" (created)" << std::endl << std::endl;;
 }
 
 NinjaTrap::~NinjaTrap()
 {
-	std::cout << "NinjaTrap" << std::endl;
-	std::cout << this->_name << " \"Oh no\" (killed)" << std::endl;
+	std::cout << "NinjaTrap constructor is called, name is " << this->_name << std::endl;
 }
 
 NinjaTrap::NinjaTrap(const NinjaTrap &copy): ClapTrap(copy._name)
 {
 	*this = copy;
-	std::cout << "NinjaTrap" << std::endl;
-	std::cout << this->_name << " \"I am copy\"" << std::endl;
+	std::cout << "NinjaTrap " <<  this->_name << " \"I am copy\"" << std::endl;
+}
+
+void NinjaTrap::set_meleeAttackDamage()
+{
+	this->_meleeAttackDamage = 60;
+}
+
+void NinjaTrap::set_maxEnergyPoints()
+{
+	this->_maxEnergyPoints = 120;
+}
+
+void NinjaTrap::set_energyPoints()
+{
+	this->_energyPoints = 120;
 }
 
 NinjaTrap & NinjaTrap::operator=(const NinjaTrap &op)

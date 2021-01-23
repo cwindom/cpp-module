@@ -17,7 +17,10 @@ public:
 	~FragTrap();
 	FragTrap &operator= (const FragTrap &op);
 	void vaulthunter_dot_exe(std::string const & target);
-
+	void set_hitPoints();
+	void set_maxHitPoints();
+	void set_rangedAttackDamage();
+	void set_armorDamageReduction();
 };
 
 

@@ -25,6 +25,9 @@ public:
 	void ninjaShoebox(ClapTrap &tr);
 	void ninjaShoebox(FragTrap &tr);
 	void ninjaShoebox(ScavTrap &tr);
+	void set_energyPoints();
+	void set_maxEnergyPoints();
+	void set_meleeAttackDamage();
 
 	void print(ClapTrap *tr);
 };

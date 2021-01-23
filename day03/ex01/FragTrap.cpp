@@ -15,6 +15,7 @@ FragTrap::FragTrap()
 	this->_meleeAttackDamage = 30;
 	this->_rangedAttackDamage = 20;
 	this->_armorDamageReduction = 5;
+	std::cout << "----------FragTrap default constructor called----------" << std::endl;
 	std::cout << "I'm over here! (created)" << std::endl << std::endl;;
 }
 
@@ -28,12 +29,14 @@ FragTrap::FragTrap(std::string name): _name(name)
 	this->_meleeAttackDamage = 30;
 	this->_rangedAttackDamage = 20;
 	this->_armorDamageReduction = 5;
+	std::cout << "----------FragTrap constructor called----------" << std::endl;
 	std::cout << "\"I'm over here! My name is " << this->_name << "\" (created)" << std::endl << std::endl;;
 }
 
 FragTrap::~FragTrap()
 {
-	std::cout << this->_name << " \"I can see... the code\" (killed)" << std::endl;
+	std::cout << "----------FragTrap destructor called----------" << std::endl;
+	std::cout << this->_name << " \"I can see... the code\" (killed)" << std::endl << std::endl;
 
 }
 
@@ -48,10 +51,12 @@ FragTrap::FragTrap(const FragTrap &copy): _name(copy._name)
 	this->_meleeAttackDamage = copy._meleeAttackDamage;
 	this->_rangedAttackDamage = copy._rangedAttackDamage;
 	this->_armorDamageReduction = copy._armorDamageReduction;
+	std::cout << "----------FragTrap copy constructor called----------" << std::endl;
 }
 
 FragTrap & FragTrap::operator=(const FragTrap &op)
 {
+	std::cout << "----------FragTrap operator= called----------" << std::endl;
 	this->_name = op._name;
 	this->_hitPoints = op._hitPoints;
 	this->_maxHitPoints = op._maxHitPoints;
@@ -66,18 +71,21 @@ FragTrap & FragTrap::operator=(const FragTrap &op)
 
 void FragTrap::rangedAttack(const std::string &target)
 {
+	std::cout << "----------FragTrap ranged attack called----------" << std::endl;
 	std::cout << "FR4G-TP " << this->_name << " attacks " << target << " at range, causing " <<
 	this->_rangedAttackDamage << " points of damage!" << std::endl << std::endl;
 }
 
 void FragTrap::meleeAttack(const std::string &target)
 {
+	std::cout << "----------FragTrap melee attack called----------" << std::endl;
 	std::cout << "FR4G-TP " << this->_name << " attacks " << target << " at range, causing " <<
 			  this->_meleeAttackDamage << " points of damage!" << std::endl << std::endl;
 }
 
 void FragTrap::takeDamage(unsigned int amount)
 {
+	std::cout << "----------FragTrap take damage called----------" << std::endl;
 	int hit = this->_hitPoints - amount + this->_armorDamageReduction;
 	if (hit > this->_hitPoints)
 	{
@@ -94,6 +102,7 @@ void FragTrap::takeDamage(unsigned int amount)
 
 void FragTrap::beRepaired(unsigned int amount)
 {
+	std::cout << "----------FragTrap be repaired called----------" << std::endl;
 	int hit = this->_hitPoints + amount;
 	if (hit < this->_hitPoints)
 	{
@@ -111,6 +120,7 @@ void FragTrap::beRepaired(unsigned int amount)
 
 void FragTrap::vaulthunter_dot_exe(const std::string &target)
 {
+	std::cout << "----------FragTrap vaulthunter.exe called----------" << std::endl;
 	if (this->_energyPoints < 25)
 	{
 		std::cout << "\"Oh no:( I have no energy for this attack\"" << std::endl << std::endl;
@@ -120,7 +130,7 @@ void FragTrap::vaulthunter_dot_exe(const std::string &target)
 	std::string attack[5] = {"Rubber Ducky", "Pirate Ship Mode", "Gun Wizard", "Miniontrap", "Meat Unicycle"};
 	srand(time(NULL));
 	int num = rand() % 5;
-	std::cout << "Heeeey this is " << attack[num] << " deadly attack!!" << std::endl;
+	std::cout << "Heeeey this is " << attack[num] << " deadly attack!!to " << target << " \"Wow! You're not dead?\""<< std::endl;
 	std::cout << "\"Wow! You're not dead?\"" << std::endl;
 	std::cout << "energy points before vaulthunter.exe: " << this->_energyPoints << std::endl;
 	this->_energyPoints -= 25;

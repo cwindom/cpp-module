@@ -5,6 +5,8 @@
 #ifndef EX04_SUPERTRAP_HPP
 #define EX04_SUPERTRAP_HPP
 
+#include <iostream>
+
 #include "ClapTrap.hpp"
 #include "FragTrap.hpp"
 #include "NinjaTrap.hpp"

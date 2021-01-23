@@ -15,6 +15,7 @@ ScavTrap::ScavTrap()
 	this->_meleeAttackDamage = 20;
 	this->_rangedAttackDamage = 15;
 	this->_armorDamageReduction = 3;
+	std::cout << "----------ScavTrap default constructor called----------" << std::endl;
 	std::cout << "ScavTrap \"Don't you know I am fabulous! (created)" << std::endl << std::endl;
 }
 
@@ -28,13 +29,15 @@ ScavTrap::ScavTrap(std::string name): _name(name)
 	this->_meleeAttackDamage = 20;
 	this->_rangedAttackDamage = 15;
 	this->_armorDamageReduction = 3;
+	std::cout << "----------ScavTrap constructor called----------" << std::endl;
 	std::cout << "ScavTrap \"Don't you know I am fabulous! My name is " << this->_name << "\" (created)" << std::endl
 	<< std::endl;
 }
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << this->_name << " ScavTrap \"My servos... are seizing...\" (killed)" << std::endl;
+	std::cout << "----------ScavTrap destructor called----------" << std::endl;
+	std::cout << this->_name << " ScavTrap \"My servos... are seizing...\" (killed)" << std::endl << std::endl;
 
 }
 
@@ -49,10 +52,12 @@ ScavTrap::ScavTrap(const ScavTrap &copy): _name(copy._name)
 	this->_meleeAttackDamage = copy._meleeAttackDamage;
 	this->_rangedAttackDamage = copy._rangedAttackDamage;
 	this->_armorDamageReduction = copy._armorDamageReduction;
+	std::cout << "----------ScavTrap copy constructor called----------" << std::endl;
 }
 
 ScavTrap & ScavTrap::operator=(const ScavTrap &op)
 {
+	std::cout << "----------ScavTrap operator= called----------" << std::endl;
 	this->_name = op._name;
 	this->_hitPoints = op._hitPoints;
 	this->_maxHitPoints = op._maxHitPoints;
@@ -67,6 +72,7 @@ ScavTrap & ScavTrap::operator=(const ScavTrap &op)
 
 void ScavTrap::rangedAttack(const std::string &target)
 {
+	std::cout << "----------ScavTrap ranged attack called----------" << std::endl;
 	std::cout << "ScavTrap " << this->_name << " attacks " << target << " at range, causing " <<
 			  this->_rangedAttackDamage << " points of damage!" << std::endl;
 	std::cout << "And now I'm going to drink beer" << std::endl << std::endl;
@@ -74,6 +80,7 @@ void ScavTrap::rangedAttack(const std::string &target)
 
 void ScavTrap::meleeAttack(const std::string &target)
 {
+	std::cout << "----------ScavTrap melee attack called----------" << std::endl;
 	std::cout << "ScavTrap " << this->_name << " attacks " << target << " at range, causing " <<
 			  this->_meleeAttackDamage << " points of damage!" << std::endl;
 	std::cout << "And now I'm going to drink beer" << std::endl << std::endl;
@@ -81,6 +88,7 @@ void ScavTrap::meleeAttack(const std::string &target)
 
 void ScavTrap::takeDamage(unsigned int amount)
 {
+	std::cout << "----------ScavTrap take damage called----------" << std::endl;
 	int hit = this->_hitPoints - amount + this->_armorDamageReduction;
 	if (hit > this->_hitPoints)
 	{
@@ -97,6 +105,7 @@ void ScavTrap::takeDamage(unsigned int amount)
 
 void ScavTrap::beRepaired(unsigned int amount)
 {
+	std::cout << "----------ScavTrap be repaired called----------" << std::endl;
 	int hit = this->_hitPoints + amount;
 	if (hit < this->_hitPoints)
 	{
@@ -115,6 +124,7 @@ void ScavTrap::beRepaired(unsigned int amount)
 
 void ScavTrap::challengeNewcomer()
 {
+	std::cout << "----------ScavTrap challenge called----------" << std::endl;
 	std::string things[7] = {	"Sing in the shower",
 								 "Feed the capybara at the zoo",
 						  		"Wielding a bare wrapping paper tube as a lightsaber",

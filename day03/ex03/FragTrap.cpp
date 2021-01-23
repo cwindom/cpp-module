@@ -40,6 +40,7 @@ FragTrap & FragTrap::operator=(const FragTrap &op)
 
 void FragTrap::vaulthunter_dot_exe(const std::string &target)
 {
+	std::cout << "----------FragTrap vaulthunter.exe called----------" << std::endl;
 	if (this->_energyPoints < 25)
 	{
 		std::cout << "\"Oh no:( I have no energy for this attack\"" << std::endl << std::endl;
@@ -49,7 +50,7 @@ void FragTrap::vaulthunter_dot_exe(const std::string &target)
 	std::string attack[5] = {"Rubber Ducky", "Pirate Ship Mode", "Gun Wizard", "Miniontrap", "Meat Unicycle"};
 	//srand(time(NULL));
 	int num = rand() % 5;
-	std::cout << "Heeeey this is " << attack[num] << " deadly attack!!" << std::endl;
+	std::cout << "Heeeey this is " << attack[num] << " deadly attack!!to " << target << " \"Wow! You're not dead?\""<< std::endl;
 	std::cout << "\"Wow! You're not dead?\"" << std::endl;
 	std::cout << "energy points before vaulthunter.exe: " << this->_energyPoints << std::endl;
 	this->_energyPoints -= 25;
