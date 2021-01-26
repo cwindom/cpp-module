@@ -4,7 +4,7 @@
 
 #include "AWeapon.hpp"
 
-AWeapon::AWeapon(const std::string &name, int apcost, int damage): _name(name), _APCost(apcost), _damage(damage)
+AWeapon::AWeapon(const std::string &name, int apCost, int damage): _name(name), _damage(damage), _APCost(apCost)
 {
 
 }
@@ -14,7 +14,7 @@ AWeapon::AWeapon(const AWeapon &copy): _name(copy._name), _damage(copy._damage),
 
 }
 
-AWeapon &AWeapon::operator=(const AWeapon &op)
+AWeapon &AWeapon::operator= (const AWeapon &op)
 {
 	this->_name = op._name;
 	this->_damage = op._damage;
@@ -24,7 +24,6 @@ AWeapon &AWeapon::operator=(const AWeapon &op)
 
 AWeapon::~AWeapon()
 {
-	std::cout << "AWeapon destructor" << std::endl;
 }
 
 std::string AWeapon::getName() const

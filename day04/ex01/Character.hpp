@@ -23,10 +23,13 @@ public:
 	Character &operator= (Character const &copy);
 
 	void recoverAP();
-	void equip(AWeapon*);
-	void attack(Enemy*);
+	void equip(AWeapon *weapon);
+	void attack(Enemy *enemy);
 	std::string getName() const;
+    AWeapon *getWp() const;
+	int getAP() const;
 };
 
+std::ostream &operator<<(std::ostream &os, Character const &rhs);
 
 #endif //EX01_CHARACTER_HPP

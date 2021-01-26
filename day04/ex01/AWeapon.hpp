@@ -15,11 +15,10 @@ protected:
 	int _APCost;
 	AWeapon();
 public:
-	AWeapon(std::string const & name, int apcost, int damage);
+	AWeapon(std::string const & name, int apCost, int damage);
 	AWeapon(AWeapon const &copy);
 	AWeapon &operator= (AWeapon const &op);
 	virtual ~AWeapon();
-	//std::string [...] getName() const;
 	std::string getName() const;
 	int getAPCost() const;
 	int getDamage() const;
