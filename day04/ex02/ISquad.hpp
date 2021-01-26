@@ -1,0 +1,17 @@
+//
+// Created by Card Windom on 1/26/21.
+//
+
+#ifndef EX02_ISQUAD_HPP
+#define EX02_ISQUAD_HPP
+
+class ISquad
+{
+public:
+    virtual ~ISquad() {}
+    virtual int getCount() const = 0;
+    virtual ISpaceMarine* getUnit(int) const = 0;
+    virtual int push(ISpaceMarine*) = 0;
+};
+
+#endif //EX02_ISQUAD_HPP
