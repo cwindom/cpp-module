@@ -14,9 +14,10 @@ private:
 	static const int _fractional = 8;
 public:
 	Fixed();
-	~Fixed();
 	Fixed(Fixed const &copy);
 	Fixed &operator= (Fixed const &copy);
+	virtual ~Fixed();
+
 	void setRawBits(int const raw);
 	int getRawBits(void) const;
 
