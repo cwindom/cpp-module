@@ -51,14 +51,14 @@ Character::~Character()
 {
 	for (int i = 0; i < INVENTORY; i++)
 	{
-		if (this->_inventory[i])
+		if (this->_inventory[i] != nullptr)
 			delete this->_inventory[i];
 	}
 }
 
-std::string Character::getName() const
+std::string const &Character::getName() const
 {
-	return this->_name;
+	return (this->_name);
 }
 
 void Character::equip(AMateria *m)
@@ -83,5 +83,8 @@ void Character::use(int idx, ICharacter &target)
 	int i = 0;
 	while (i < INVENTORY && this->_inventory[i])
 		i++;
-	if (idx > 0 && idx < INVENTORY && )
+	if (idx < 0 || idx >= INVENTORY || this->_inventory[idx] == nullptr)
+	    return;
+
+	//this->_inventory[idx]->use(target);
 }

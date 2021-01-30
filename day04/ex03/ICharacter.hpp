@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include "AMateria.hpp"
-
+class ICharacter;
 
 class ICharacter
 {

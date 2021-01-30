@@ -8,6 +8,7 @@
 #include <iostream>
 #include "AMateria.hpp"
 class AMateria;
+class ICharacter;
 #include "ICharacter.hpp"
 
 class AMateria
