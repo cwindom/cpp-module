@@ -13,11 +13,13 @@ AssaultTerminator::~AssaultTerminator() {
 }
 
 AssaultTerminator::AssaultTerminator(const AssaultTerminator &copy) {
-
+	(void)copy;
+	std::cout << "* teleports from space *" << std::endl;
 }
 
 AssaultTerminator &AssaultTerminator::operator=(const AssaultTerminator &copy) {
-
+	(void)copy;
+	return *this;
 }
 
 void AssaultTerminator::battleCry() const {
@@ -30,4 +32,9 @@ void AssaultTerminator::rangedAttack() const {
 
 void AssaultTerminator::meleeAttack() const {
     std::cout << "* attacks with chainfists *" << std::endl;
+}
+
+ISpaceMarine *AssaultTerminator::clone() const
+{
+	return (new AssaultTerminator(*this));
 }

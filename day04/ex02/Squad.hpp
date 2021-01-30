@@ -19,8 +19,8 @@ public:
     Squad(Squad const &copy);
     Squad &operator= (Squad const &copy);
     virtual int getCount() const;
-    virtual ISpaceMarine* getUnit(int) const;
-    virtual int push(ISpaceMarine*);
+    virtual ISpaceMarine* getUnit(int N) const;
+    virtual int push(ISpaceMarine *marine);
 };
 
 

@@ -4,11 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/cwindom/Desktop/cpp-module/day04/ex02/AssaultTerminator.cpp" "/Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/AssaultTerminator.cpp.o"
-  "/Users/cwindom/Desktop/cpp-module/day04/ex02/ISpaceMarine.cpp" "/Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/ISpaceMarine.cpp.o"
-  "/Users/cwindom/Desktop/cpp-module/day04/ex02/Squad.cpp" "/Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/Squad.cpp.o"
-  "/Users/cwindom/Desktop/cpp-module/day04/ex02/TacticalMarine.cpp" "/Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/TacticalMarine.cpp.o"
-  "/Users/cwindom/Desktop/cpp-module/day04/ex02/main.cpp" "/Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/main.cpp.o"
+  "/Users/maria/Desktop/cpp-module/day04/ex02/AssaultTerminator.cpp" "/Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/AssaultTerminator.cpp.o"
+  "/Users/maria/Desktop/cpp-module/day04/ex02/Squad.cpp" "/Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/Squad.cpp.o"
+  "/Users/maria/Desktop/cpp-module/day04/ex02/TacticalMarine.cpp" "/Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/TacticalMarine.cpp.o"
+  "/Users/maria/Desktop/cpp-module/day04/ex02/main.cpp" "/Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/ex02.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

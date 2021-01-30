@@ -5,10 +5,15 @@
 #ifndef EX03_MATERIASOURCE_HPP
 #define EX03_MATERIASOURCE_HPP
 
+#include "IMateriaSource.hpp"
 
-class MateriaSource
+class MateriaSource: public IMateriaSource
 {
-
+public:
+	MateriaSource();
+	~MateriaSource();
+	MateriaSource(MateriaSource const &copy);
+	MateriaSource &operator= (MateriaSource const &copy);
 };
 
 

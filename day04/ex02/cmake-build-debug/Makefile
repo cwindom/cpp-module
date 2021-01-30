@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cwindom/Desktop/cpp-module/day04/ex02
+CMAKE_SOURCE_DIR = /Users/maria/Desktop/cpp-module/day04/ex02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles /Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles /Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cwindom/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maria/Desktop/cpp-module/day04/ex02/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,33 +169,6 @@ AssaultTerminator.s: AssaultTerminator.cpp.s
 AssaultTerminator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/AssaultTerminator.cpp.s
 .PHONY : AssaultTerminator.cpp.s
-
-ISpaceMarine.o: ISpaceMarine.cpp.o
-
-.PHONY : ISpaceMarine.o
-
-# target to build an object file
-ISpaceMarine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ISpaceMarine.cpp.o
-.PHONY : ISpaceMarine.cpp.o
-
-ISpaceMarine.i: ISpaceMarine.cpp.i
-
-.PHONY : ISpaceMarine.i
-
-# target to preprocess a source file
-ISpaceMarine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ISpaceMarine.cpp.i
-.PHONY : ISpaceMarine.cpp.i
-
-ISpaceMarine.s: ISpaceMarine.cpp.s
-
-.PHONY : ISpaceMarine.s
-
-# target to generate assembly for a file
-ISpaceMarine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ISpaceMarine.cpp.s
-.PHONY : ISpaceMarine.cpp.s
 
 Squad.o: Squad.cpp.o
 
@@ -290,9 +263,6 @@ help:
 	@echo "... AssaultTerminator.o"
 	@echo "... AssaultTerminator.i"
 	@echo "... AssaultTerminator.s"
-	@echo "... ISpaceMarine.o"
-	@echo "... ISpaceMarine.i"
-	@echo "... ISpaceMarine.s"
 	@echo "... Squad.o"
 	@echo "... Squad.i"
 	@echo "... Squad.s"

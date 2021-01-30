@@ -5,10 +5,27 @@
 #ifndef EX03_AMATERIA_HPP
 #define EX03_AMATERIA_HPP
 
+#include <iostream>
+#include "AMateria.hpp"
+class AMateria;
+#include "ICharacter.hpp"
 
 class AMateria
 {
+protected:
+	std::string _type;
+	unsigned int _xp;
+	AMateria();
+public:
+	AMateria(std::string const & type);
+	AMateria(const AMateria &copy);
+	AMateria &operator= (const AMateria &op);
+	virtual ~AMateria();
 
+	std::string const & getType() const; //Returns the materia type
+	unsigned int getXP() const; //Returns the Materia's XP
+	virtual AMateria* clone() const = 0;
+	virtual void use(ICharacter &target);
 };
 
 

@@ -5,6 +5,8 @@
 #ifndef EX02_ISQUAD_HPP
 #define EX02_ISQUAD_HPP
 
+#include "ISpaceMarine.hpp"
+
 class ISquad
 {
 public:

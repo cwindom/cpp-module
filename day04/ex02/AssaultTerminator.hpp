@@ -18,6 +18,8 @@ public:
     virtual void battleCry() const;
     virtual void rangedAttack() const;
     virtual void meleeAttack() const;
+
+    ISpaceMarine *clone() const;
 };
 
 
