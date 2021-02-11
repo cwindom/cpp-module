@@ -19,6 +19,8 @@ Cure::Cure(const Cure &copy): AMateria("cure")
 
 Cure &Cure::operator=(const Cure &copy)
 {
+	if (this == &copy)
+		return *this;
 	this->_xp = copy._xp;
 	return *this;
 }

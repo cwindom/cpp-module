@@ -6,17 +6,19 @@
 #define EX03_CHARACTER_HPP
 
 #include "ICharacter.hpp"
-#include "Character.hpp"
-#define INVENTORY 4
+//#include "Ice.hpp"
+//#include "Cure.hpp"
+//#include "AMateria.hpp"
+//class Character;
 
 class Character: public ICharacter
 {
 private:
-	AMateria *_inventory[INVENTORY];
+	AMateria *_inventory[4];
 	std::string _name;
+	int _amount;
 	Character();
 public:
-
 	Character(std::string name);
 	Character(Character const &copy);
 	Character &operator= (Character const &copy);

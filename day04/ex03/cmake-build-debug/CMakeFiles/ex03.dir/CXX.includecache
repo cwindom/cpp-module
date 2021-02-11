@@ -6,65 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
 iostream
 -
-AMateria.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
 ICharacter.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/ICharacter.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/ICharacter.hpp
 
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Character.cpp
-Character.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Character.hpp
-
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Character.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/Character.hpp
 ICharacter.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/ICharacter.hpp
-Character.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Character.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/ICharacter.hpp
 
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Cure.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/ICharacter.hpp
 iostream
 -
 AMateria.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
 
-/Users/cwindom/Desktop/cpp-module/day04/ex03/ICharacter.hpp
-iostream
--
+/Users/maria/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
 AMateria.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
 
-/Users/cwindom/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
-AMateria.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
-
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Ice.hpp
-iostream
--
-AMateria.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
-
-/Users/cwindom/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
-IMateriaSource.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
-
-/Users/cwindom/Desktop/cpp-module/day04/ex03/main.cpp
-iostream
--
-IMateriaSource.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.cpp
 MateriaSource.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
-Ice.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Ice.hpp
-Cure.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Cure.hpp
-AMateria.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/AMateria.hpp
-ICharacter.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/ICharacter.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
+
+/Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
+IMateriaSource.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
 Character.hpp
-/Users/cwindom/Desktop/cpp-module/day04/ex03/Character.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/Character.hpp
 

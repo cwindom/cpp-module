@@ -6,9 +6,13 @@
 #define EX03_MATERIASOURCE_HPP
 
 #include "IMateriaSource.hpp"
+#include "Character.hpp"
 
 class MateriaSource: public IMateriaSource
 {
+private:
+	AMateria *_src[4];
+	int _amount;
 public:
 	MateriaSource();
     MateriaSource(MateriaSource const &copy);

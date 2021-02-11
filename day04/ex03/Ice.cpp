@@ -6,19 +6,22 @@
 
 Ice::Ice(): AMateria("ice")
 {
+	this->_xp = 0;
 }
 
 Ice::~Ice()
 {
 }
 
-Ice::Ice(const Ice &copy): AMateria("ice")
+Ice::Ice(const Ice &copy): AMateria(copy)
 {
 	this->_xp = copy._xp;
 }
 
 Ice &Ice::operator=(const Ice &copy)
 {
+	if (this == &copy)
+		return *this;
 	this->_xp = copy._xp;
 	return *this;
 }

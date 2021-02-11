@@ -6,12 +6,10 @@
 
 AMateria::AMateria(const std::string &type): _type(type), _xp(0)
 {
-
 }
 
 AMateria::~AMateria()
 {
-
 }
 
 std::string const &AMateria::getType() const
@@ -26,13 +24,12 @@ unsigned int AMateria::getXP() const
 
 void AMateria::use(ICharacter &target)
 {
-	(void)&target;
 	this->_xp += 10;
+	(void)target;
 }
 
 AMateria::AMateria(): _type("default"), _xp(0)
 {
-
 }
 
 AMateria &AMateria::operator=(const AMateria &op)
@@ -44,7 +41,7 @@ AMateria &AMateria::operator=(const AMateria &op)
 	return *this;
 }
 
-AMateria::AMateria(const AMateria &copy): _type(copy._type), _xp(0)
+AMateria::AMateria(const AMateria &copy)/*: _type(copy._type), _xp(0)*/
 {
-
+	operator=(copy);
 }

@@ -6,17 +6,15 @@
 #define EX03_AMATERIA_HPP
 
 #include <iostream>
-#include "AMateria.hpp"
 class AMateria;
-class ICharacter;
 #include "ICharacter.hpp"
 
 class AMateria
 {
 protected:
-	std::string _type;
-	unsigned int _xp;
 	AMateria();
+	unsigned int _xp;
+	std::string _type;
 public:
 	AMateria(std::string const & type);
 	AMateria(const AMateria &copy);
