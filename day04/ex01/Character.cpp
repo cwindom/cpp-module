@@ -4,7 +4,7 @@
 
 #include "Character.hpp"
 
-Character::Character(): _name("default"), _AP(0), wp(NULL)
+Character::Character(): _name("default"), _AP(40), wp(NULL)
 {
 }
 
@@ -21,9 +21,12 @@ Character::Character(const Character &copy): _name(copy._name), _AP(copy._AP), w
 }
 
 Character &Character::operator=(const Character &copy) {
-    this->_name = copy._name;
-    this->wp = copy.wp;
-    this->_AP = copy._AP;
+	if (this != &copy)
+	{
+		this->_name = copy._name;
+		this->wp = copy.wp;
+		this->_AP = copy._AP;
+	}
     return *this;
 }
 

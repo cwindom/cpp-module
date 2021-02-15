@@ -11,7 +11,7 @@
 class TacticalMarine: public ISpaceMarine {
 public:
     TacticalMarine();
-    ~TacticalMarine();
+    virtual ~TacticalMarine();
     TacticalMarine(TacticalMarine const &copy);
     TacticalMarine &operator= (TacticalMarine const &copy);
 

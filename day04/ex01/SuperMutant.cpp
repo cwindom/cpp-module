@@ -21,10 +21,11 @@ SuperMutant::SuperMutant(const SuperMutant &copy): Enemy(copy)
 
 SuperMutant &SuperMutant::operator=(const SuperMutant &copy)
 {
-	if (this == &copy)
-		return *this;
-	this->_hitPoints = copy._hitPoints;
-	this->_type = copy._type;
+	if (this != &copy)
+	{
+		this->_hitPoints = copy._hitPoints;
+		this->_type = copy._type;
+	}
 	return *this;
 }
 

@@ -21,10 +21,11 @@ RadScorpion::RadScorpion(const RadScorpion &copy): Enemy(copy)
 
 RadScorpion &RadScorpion::operator=(const RadScorpion &copy)
 {
-	if (this == &copy)
-		return *this;
-	this->_hitPoints = copy._hitPoints;
-	this->_type = copy._type;
+	if (this != &copy)
+	{
+		this->_hitPoints = copy._hitPoints;
+		this->_type = copy._type;
+	}
 	return *this;
 }
 

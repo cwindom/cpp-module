@@ -15,7 +15,7 @@ protected:
 	std::string _name;
 public:
 	Victim(std::string const name);
-	~Victim();
+	virtual ~Victim();
 	Victim(Victim const &copy);
 	Victim &operator= (Victim const &op);
 	std::string get_name() const;

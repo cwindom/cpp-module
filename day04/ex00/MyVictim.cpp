@@ -36,3 +36,4 @@ void MyVictim::getPolymorphed() const
 	"Dollymorphed" << std::endl;
 }
 
+

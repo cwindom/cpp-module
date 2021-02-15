@@ -11,7 +11,7 @@
 class AssaultTerminator: public ISpaceMarine {
 public:
     AssaultTerminator();
-    ~AssaultTerminator();
+    virtual ~AssaultTerminator();
     AssaultTerminator(AssaultTerminator const &copy);
     AssaultTerminator &operator= (AssaultTerminator const &copy);
 

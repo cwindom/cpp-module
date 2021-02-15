@@ -8,6 +8,7 @@
 int main() {
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
+
     ISquad* vlc = new Squad;
     vlc->push(bob);
     vlc->push(jim);

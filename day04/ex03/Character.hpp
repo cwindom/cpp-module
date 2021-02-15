@@ -6,8 +6,6 @@
 #define EX03_CHARACTER_HPP
 
 #include "ICharacter.hpp"
-//#include "Ice.hpp"
-//#include "Cure.hpp"
 //#include "AMateria.hpp"
 //class Character;
 

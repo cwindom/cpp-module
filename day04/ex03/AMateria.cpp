@@ -4,8 +4,26 @@
 
 #include "AMateria.hpp"
 
+AMateria::AMateria()
+{
+	//never used
+}
+
 AMateria::AMateria(const std::string &type): _type(type), _xp(0)
 {
+}
+
+AMateria::AMateria(const AMateria &copy): _type(copy._type), _xp(0)
+{
+}
+
+AMateria &AMateria::operator=(const AMateria &op)
+{
+	if (this == &op)
+ 		return *this;
+	this->_type = op._type;
+	this->_xp = op._xp;
+	return *this;
 }
 
 AMateria::~AMateria()
@@ -25,23 +43,6 @@ unsigned int AMateria::getXP() const
 void AMateria::use(ICharacter &target)
 {
 	this->_xp += 10;
-	(void)target;
-}
-
-AMateria::AMateria(): _type("default"), _xp(0)
-{
-}
-
-AMateria &AMateria::operator=(const AMateria &op)
-{
-	if (this == &op)
-		return *this;
-	this->_type = op._type;
-	this->_xp = op._xp;
-	return *this;
-}
-
-AMateria::AMateria(const AMateria &copy)/*: _type(copy._type), _xp(0)*/
-{
-	operator=(copy);
+	target.getName();
+	//std::cout << "Debug: " << "this is use from AMateria.cpp" << std::endl;
 }

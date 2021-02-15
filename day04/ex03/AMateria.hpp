@@ -11,10 +11,11 @@ class AMateria;
 
 class AMateria
 {
-protected:
+private:
 	AMateria();
-	unsigned int _xp;
+protected:
 	std::string _type;
+	unsigned int _xp;
 public:
 	AMateria(std::string const & type);
 	AMateria(const AMateria &copy);

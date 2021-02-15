@@ -16,9 +16,12 @@ AWeapon::AWeapon(const AWeapon &copy): _name(copy._name), _damage(copy._damage),
 
 AWeapon &AWeapon::operator= (const AWeapon &op)
 {
-	this->_name = op._name;
-	this->_damage = op._damage;
-	this->_APCost = op._APCost;
+	if (this != &op)
+	{
+		this->_name = op._name;
+		this->_damage = op._damage;
+		this->_APCost = op._APCost;
+	}
 	return *this;
 }
 

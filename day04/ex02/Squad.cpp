@@ -7,10 +7,6 @@
 Squad::Squad() {
     this->_count = 0;
     this->units = nullptr;
-
-//	std::cout << "count: " << this->_count << std::endl;
-//	for (int j = 0; j < this->_count; j++)
-//		std::cout << "unit[" << j << "] = " << this->getUnit(j) << std::endl;
 }
 
 Squad::~Squad() {
@@ -22,25 +18,34 @@ Squad::~Squad() {
 }
 
 Squad::Squad(const Squad &copy) {
-    this->_count = 0;
-    this->units = nullptr;
-    for (int i = 0; i < copy.getCount(); i++)
-        this->push(copy.getUnit(i)->clone());
+	if (copy._count >= 0)
+	{
+		if (this->units)
+		{
+			for(int i = 0; i < this->_count; i++)
+				delete this->units[i];
+			delete this->units;
+		}
+		this->units = nullptr;
+		this->_count = copy.getCount();
+		for (int i = 0; i < copy.getCount(); i++)
+			this->push(copy.getUnit(i)->clone());
+	}
 }
 
 Squad &Squad::operator= (const Squad &copy) {
-	int i;
 	if (this != &copy && copy._count >= 0)
 	{
 		if (this->units)
 		{
-			for(i = 0; i < this->_count; i++)
+			for(int i = 0; i < this->_count; i++)
 				delete this->units[i];
 			delete this->units;
 		}
+		this->units = nullptr;
 		this->_count = copy.getCount();
-		for (i = 0; i < copy._count; i++)
-			push(copy.units[i]->clone());
+		for (int i = 0; i < copy._count; i++)
+			this->push(copy.getUnit(i)->clone());
 	}
 	return *this;
 }
@@ -57,8 +62,7 @@ ISpaceMarine *Squad::getUnit(int N) const {
 }
 
 int Squad::push(ISpaceMarine *marine) {
-	int i;
-	for (i = 0; i < this->_count; i++)
+	for (int i = 0; i < this->_count; i++)
 	{
 		if (this->units[i] == marine)
 		{
@@ -73,8 +77,9 @@ int Squad::push(ISpaceMarine *marine) {
 		if (this->units)
 		{
 			ISpaceMarine **tmp = new ISpaceMarine*[this->_count + 1];
-			for (i = 0; i < this->_count; i++)
+			for (int i = 0; i < this->_count; i++)
 				tmp[i] = this->units[i];
+			delete this->units;
 			tmp[this->_count] = marine;
 			if (this->_count > 1)
 				delete this->units;
@@ -88,9 +93,5 @@ int Squad::push(ISpaceMarine *marine) {
 			this->_count = 1;
 		}
 	}
-
-//	std::cout << "count: " << this->_count << std::endl;
-//	for (int j = 0; j < this->_count; j++)
-//		std::cout << "unit[" << j << "] = " << this->getUnit(j) << std::endl;
 	return this->_count;
 }

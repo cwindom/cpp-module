@@ -16,6 +16,12 @@ ICharacter.hpp
 ICharacter.hpp
 /Users/maria/Desktop/cpp-module/day04/ex03/ICharacter.hpp
 
+/Users/maria/Desktop/cpp-module/day04/ex03/Cure.hpp
+iostream
+-
+AMateria.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
+
 /Users/maria/Desktop/cpp-module/day04/ex03/ICharacter.hpp
 iostream
 -
@@ -26,13 +32,33 @@ AMateria.hpp
 AMateria.hpp
 /Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
 
-/Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.cpp
-MateriaSource.hpp
-/Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/Ice.hpp
+iostream
+-
+AMateria.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
 
 /Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
 IMateriaSource.hpp
 /Users/maria/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
+Character.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/Character.hpp
+
+/Users/maria/Desktop/cpp-module/day04/ex03/main.cpp
+iostream
+-
+IMateriaSource.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/IMateriaSource.hpp
+MateriaSource.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/MateriaSource.hpp
+Ice.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/Ice.hpp
+Cure.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/Cure.hpp
+AMateria.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/AMateria.hpp
+ICharacter.hpp
+/Users/maria/Desktop/cpp-module/day04/ex03/ICharacter.hpp
 Character.hpp
 /Users/maria/Desktop/cpp-module/day04/ex03/Character.hpp
 

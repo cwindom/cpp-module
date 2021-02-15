@@ -7,9 +7,12 @@
 int main()
 {
 	Sorcerer robert("Robert", "the Magnificent");
+
 	Victim jim("Jimmy");
 	Peon joe("Joe");
+
 	std::cout << robert << jim << joe;
+
 	robert.polymorph(jim);
 	robert.polymorph(joe);
 //	//check error with default constructor
@@ -19,5 +22,7 @@ int main()
 //	MyVictim sheep("Dolly");
 //	std::cout << sheep;
 //	sedric.polymorph(sheep);
+	//check getPolymorfed
+	//jim.getPolymorphed();
 	return 0;
 }

@@ -10,13 +10,18 @@
 int main()
 {
 	Character* me = new Character("me");
+
 	std::cout << *me;
+
 	Enemy* b = new RadScorpion();
+
 	AWeapon* pr = new PlasmaRifle();
 	AWeapon* pf = new PowerFist();
+
 	me->equip(pr);
 	std::cout << *me;
 	me->equip(pf);
+
 	me->attack(b);
 	std::cout << *me;
 	me->equip(pr);
@@ -25,18 +30,23 @@ int main()
 	std::cout << *me;
 	me->attack(b);
 	std::cout << *me;
+
     //------------------------------------------------------
     //test with mutant
+	//std::cout << "-----------------------------" << std::endl;
 //    std::cout << *me;
 //    Enemy* a = new SuperMutant();
 //    AWeapon* ar = new PlasmaRifle();
 //    AWeapon* af = new PowerFist();
+//	std::cout << "health: " << a->getHP() << std::endl;
 //    me->equip(ar);
 //    me->attack(a);
+//	std::cout << "health: " << a->getHP() << std::endl;
 //    std::cout << *me;
 //    me->equip(af);
 //    me->attack(a);
 //    std::cout << *me;
+//    std::cout << "health: " << a->getHP() << std::endl;
     //--------------------------------------------------------
     //for check enemy's hp
 //    AWeapon *pw = new PowerFist();

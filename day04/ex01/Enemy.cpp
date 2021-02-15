@@ -22,8 +22,11 @@ Enemy::Enemy(const Enemy &copy): _hitPoints(copy._hitPoints), _type(copy._type)
 
 Enemy &Enemy::operator=(const Enemy &copy)
 {
-	this->_hitPoints = copy._hitPoints;
-	this->_type = copy._type;
+	if (this != &copy)
+	{
+		this->_hitPoints = copy._hitPoints;
+		this->_type = copy._type;
+	}
 	return *this;
 }
 
@@ -40,4 +43,6 @@ int Enemy::getHP() const
 void Enemy::takeDamage(int dmg)
 {
 	this->_hitPoints -= dmg;
+	if (this->_hitPoints <= 0)
+		this->_hitPoints = 0;
 }

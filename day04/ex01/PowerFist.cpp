@@ -22,11 +22,12 @@ PowerFist::PowerFist(const PowerFist &copy): AWeapon(copy)
 
 PowerFist &PowerFist::operator=(const PowerFist &copy)
 {
-	if (this == &copy)
-		return *this;
-	this->_name = copy._name;
-	this->_APCost = copy._APCost;
-	this->_damage = copy._damage;
+	if (this != &copy)
+	{
+		this->_name = copy._name;
+		this->_APCost = copy._APCost;
+		this->_damage = copy._damage;
+	}
 	return *this;
 }
 
