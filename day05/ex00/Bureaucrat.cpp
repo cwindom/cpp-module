@@ -16,10 +16,8 @@ Bureaucrat::Bureaucrat(std::string name, int grade): _name(name), _grade(grade)
 		throw Bureaucrat::GradeTooLowException();
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat &copy)
+Bureaucrat::Bureaucrat(const Bureaucrat &copy): _grade(copy._grade)
 {
-	this->_name = copy._name;
-	this->_grade = copy._grade;
 	if (this->_grade < 1)
 		throw Bureaucrat::GradeTooHighException();
 	if (this->_grade > 150)
@@ -29,10 +27,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat &copy)
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat &op)
 {
 	if (this != &op)
-	{
-		this->_name = op._name;
 		this->_grade = op._grade;
-	}
 	return *this;
 }
 
