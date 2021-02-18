@@ -62,7 +62,11 @@ void Bureaucrat::decrementGrade()
 
 void Bureaucrat::signForm(Form &f) {
     if(f.get_isSigned())
+    {
         std::cout << this->_name << " cannot sign " << f.get_name() << " because isSigned is " << f.get_isSigned() << std::endl;
+        return;
+    }
+
     try
     {
         f.beSigned(*this);

@@ -17,7 +17,10 @@ Form::~Form() {
 }
 
 Form::Form(const Form &copy): _name(copy._name), _gradeSign(copy._gradeSign), _gradeExec(copy._gradeExec), _isSigned(copy._isSigned) {
-
+    if (this->_gradeExec < 1 || this->_gradeSign < 1)
+        throw Form::GradeTooHighException();
+    if (this->_gradeExec > 150 || this->_gradeSign > 150)
+        throw Form::GradeTooLowException();
 }
 
 Form &Form::operator=(const Form &op) {

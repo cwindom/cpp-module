@@ -9,5 +9,7 @@ CMakeFiles/ex01.dir/Form.cpp.o: ../Bureaucrat.hpp
 CMakeFiles/ex01.dir/Form.cpp.o: ../Form.cpp
 CMakeFiles/ex01.dir/Form.cpp.o: ../Form.hpp
 
+CMakeFiles/ex01.dir/main.cpp.o: ../Bureaucrat.hpp
+CMakeFiles/ex01.dir/main.cpp.o: ../Form.hpp
 CMakeFiles/ex01.dir/main.cpp.o: ../main.cpp
 
