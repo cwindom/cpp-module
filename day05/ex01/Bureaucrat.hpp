@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <stdexcept>
+class Bureaucrat;
+#include "Form.hpp"
 
 class Bureaucrat
 {
@@ -25,6 +27,8 @@ public:
 
 	void incrementGrade();
 	void decrementGrade();
+
+	void signForm(Form &f);
 
 class GradeTooHighException: public std::exception{
 	virtual const char* what() const throw();
