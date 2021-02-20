@@ -16,13 +16,11 @@ private:
     const int           _gradeSign;
     const int           _gradeExec;
 public:
-    //Coplien
     Form();
     Form(std::string const name, int const gradeSign, int const gradeExec);
     virtual ~Form();
     Form(const Form &copy);
     Form &operator= (const Form &op);
-    //getters
     int         get_gradeSign() const;
     int         get_gradeExec() const;
     std::string get_name() const;
@@ -36,6 +34,8 @@ public:
     class GradeTooLowException: public std::exception{
         virtual const char* what() const throw();
     };
+
+    virtual void execute(Bureaucrat const & executor) const = 0;
 };
 
 std::ostream &operator<< (std::ostream &os, Form const &rhs);

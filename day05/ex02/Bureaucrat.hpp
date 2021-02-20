@@ -37,6 +37,7 @@ class GradeTooLowException: public std::exception{
 	virtual const char* what() const throw();
 };
 
+    void executeForm(Form const & form);
 };
 
 std::ostream &operator<< (std::ostream &os, Bureaucrat const &rhs);
