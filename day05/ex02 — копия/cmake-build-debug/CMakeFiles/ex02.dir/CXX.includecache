@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/maria/Desktop/module/day05/ex02 — копия/Bureaucrat.hpp
+iostream
+-
+stdexcept
+-
+Form.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+iostream
+-
+Bureaucrat.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Bureaucrat.hpp
+
+/Users/maria/Desktop/module/day05/ex02 — копия/Intern.hpp
+Form.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+ShrubberyCreationForm.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/ShrubberyCreationForm.hpp
+RobotomyRequestForm.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/RobotomyRequestForm.hpp
+PresidentialPardonForm.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/PresidentialPardonForm.hpp
+
+/Users/maria/Desktop/module/day05/ex02 — копия/PresidentialPardonForm.hpp
+Form.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+
+/Users/maria/Desktop/module/day05/ex02 — копия/RobotomyRequestForm.hpp
+Form.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+
+/Users/maria/Desktop/module/day05/ex02 — копия/ShrubberyCreationForm.hpp
+fstream
+-
+Form.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+
+/Users/maria/Desktop/module/day05/ex02 — копия/main.cpp
+iostream
+-
+Bureaucrat.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Bureaucrat.hpp
+Form.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Form.hpp
+PresidentialPardonForm.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/PresidentialPardonForm.hpp
+RobotomyRequestForm.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/RobotomyRequestForm.hpp
+ShrubberyCreationForm.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/ShrubberyCreationForm.hpp
+Intern.hpp
+/Users/maria/Desktop/module/day05/ex02 — копия/Intern.hpp
+
