@@ -12,16 +12,31 @@ int main() {
 	Form *test;
 	test = Barry.makeForm("presidential pardon", "house");
 	std::cout << *test << std::endl;
+    Form *test1;
+    test1 = Barry.makeForm("robotomy request", "house");
+    std::cout << *test1 << std::endl;
+    Form *test2;
+    test2 = Barry.makeForm("shrubbery creation", "house");
+    std::cout << *test2 << std::endl;
+    std::cout << "----------------------------------\n";
+    Tom.signForm(*test);
+    Tom.executeForm(*test);
+    std::cout << "----------------------------------\n";
+    Tom.signForm(*test1);
+    Tom.executeForm(*test1);
+    std::cout << "----------------------------------\n";
+    Tom.signForm(*test2);
+    Tom.executeForm(*test2);
+    std::cout << "----------------------------------\n";
 	//check if name form is not exist
-	Form *test1;
+	Form *test3;
 	try
     {
-        test1 = Barry.makeForm("blablabla", "bla");
+        test3 = Barry.makeForm("blablabla", "bla");
     }
 	catch (std::exception const &e)
     {
 	    std::cerr << e.what() << std::endl;
     }
-
     return 0;
 }

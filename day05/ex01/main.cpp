@@ -29,7 +29,17 @@ int main() {
     }
     catch (std::exception const &e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr << "cannot create form with grade sign 152: " << e.what() << std::endl;
+    }
+    std::cout << "----------------------------------------\n";
+    std::cout << "Try create form with too high gradeExec " << std::endl;
+    try
+    {
+        Form High("High", 140, 0);
+    }
+    catch (std::exception const &e)
+    {
+        std::cerr << "cannot create form with grade exec 0: " << e.what() << std::endl;
     }
     return 0;
 }

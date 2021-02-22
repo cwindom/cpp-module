@@ -12,9 +12,9 @@ class Form;
 class Form {
 private:
     const std::string   _name;
-    bool                _isSigned;
     const int           _gradeSign;
     const int           _gradeExec;
+    bool                _isSigned;
 public:
     //Coplien
     Form();

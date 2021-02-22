@@ -6,9 +6,9 @@
 
 Form::Form(const std::string name, const int gradeSign, const int gradeExec): _name(name), _gradeSign(gradeSign), _gradeExec(gradeExec), _isSigned(false)
 {
-    if (this->_gradeSign > 150 || this->_gradeExec > 150)
-        throw Form::GradeTooLowException();
-    if (this->_gradeSign > 150 || this->_gradeExec > 150)
+    if (this->_gradeExec < 1 || this->_gradeSign < 1)
+        throw Form::GradeTooHighException();
+    if (this->_gradeExec > 150 || this->_gradeSign > 150)
         throw Form::GradeTooLowException();
 }
 

@@ -6,6 +6,10 @@ int main()
 	Bureaucrat Tom("Tom", 2);
 	//operator<<
 	std::cout << Tom;
+	Tom.decrementGrade();
+    std::cout << "Tom after decrement: " << Tom;
+    Tom.incrementGrade();
+    std::cout << "Tom after increment: " << Tom;
 	//try low
 	try
 	{
@@ -14,7 +18,7 @@ int main()
 	}
 	catch (std::exception const &e)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cerr << "Try grade 151: " << e.what() << std::endl;
 	}
 	//try high
 	try
@@ -24,7 +28,7 @@ int main()
 	}
 	catch(std::exception const &e)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cerr << "Try grade 0: " << e.what() << std::endl;
 	}
 	//try increment(high)
 	try
@@ -35,7 +39,7 @@ int main()
 	}
 	catch (std::exception const &e)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cerr << "Try high grade 1: " << e.what() << std::endl;
 	}
 	//try decrement(low)
 	try
@@ -46,7 +50,7 @@ int main()
 	}
 	catch (std::exception const &e)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cerr << "Try low grade 150: " << e.what() << std::endl;
 	}
 	return 0;
 }
