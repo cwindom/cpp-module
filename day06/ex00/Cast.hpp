@@ -21,10 +21,10 @@ public:
     Cast &operator= (Cast const op);
 
     float toCast(std::string str);
-    void castToChar(float num);
-    void castToInt(float num);
-    void castToFloat(float num);
-    void castToDouble(float num);
+    void castToChar(std::string str);
+    void castToInt(std::string str);
+    void castToFloat(std::string str);
+    void castToDouble(std::string str);
     class ImpossibleException: public std::exception{
         virtual const char* what() const throw();
     };

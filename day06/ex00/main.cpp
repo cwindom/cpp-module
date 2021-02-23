@@ -26,7 +26,7 @@ double: 42.0
 
 int main(int ac, char **av) {
     Cast a;
-    std::string str = "d";
+    std::string str = "'*'";
 //    std::string str = "inf";
 //    std::string str = "-inf";
 //    std::string str = "+inf";
@@ -35,11 +35,10 @@ int main(int ac, char **av) {
 //    std::string str = "+inff";
 //    std::string str = "nan";
 //    std::string str = "nanf";
-    a.castToChar(a.toCast(str));
-    a.castToInt(a.toCast(str));
-    a.castToFloat(a.toCast(str));
-    a.castToDouble(a.toCast(str));
-    a.toCast(str);
+    a.castToChar(str);
+    a.castToInt(str);
+    a.castToFloat(str);
+    a.castToDouble(str);
 //    if (ac == 2)
 //    {
 //

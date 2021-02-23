@@ -20,8 +20,23 @@ Cast &Cast::operator=(const Cast op) {
     return *this;
 }
 
-void Cast::castToChar(float num) {
+void Cast::castToChar(std::string str) {
     std::cout << "char: ";
+    int i = 0;
+    float num;
+    if (str.size() == 3 && str[0] == '\'' && str[2] == '\'')
+    {
+        num = str[1] - 0;
+    }
+    else
+    {
+        while (str[i])
+            i++;
+        if (str[i-1] == 'f' && str != "+inf" && str != "-inf" && str != "inf")
+            str.resize(str.size() - 1);
+        std::stringstream s(str);
+        s >> num;
+    }
     if (num == std::numeric_limits<float>::infinity() || num == -std::numeric_limits<float>::infinity() || isnan(num) || num == std::numeric_limits<double>::infinity() || num == -std::numeric_limits<double>::infinity())
     {
         std::cout << "impossible" << std::endl;
@@ -35,25 +50,62 @@ void Cast::castToChar(float num) {
     std::cout << static_cast<char>(num) << std::endl;
 }
 
-void Cast::castToInt(float num) {
+void Cast::castToInt(std::string str) {
     std::cout << "int: ";
+    int i = 0;
+    float num;
+    if (str.size() == 3 && str[0] == '\'' && str[2] == '\'')
+        num = str[1] - 0;
+    else
+    {
+        while (str[i])
+            i++;
+        if (str[i-1] == 'f' && str != "+inf" && str != "-inf" && str != "inf")
+            str.resize(str.size() - 1);
+        std::stringstream s(str);
+        s >> num;
+    }
     if (num == std::numeric_limits<float>::infinity() || num == -std::numeric_limits<float>::infinity() || isnan(num) || num == std::numeric_limits<double>::infinity() || num == -std::numeric_limits<double>::infinity())
     {
         std::cout << "impossible" << std::endl;
         return;
     }
-
-
     std::cout << static_cast<int>(num) << std::endl;
 }
 
-void Cast::castToFloat(float num) {
+void Cast::castToFloat(std::string str) {
     std::cout << "float: ";
+    int i = 0;
+    float num;
+    if (str.size() == 3 && str[0] == '\'' && str[2] == '\'')
+        num = str[1] - 0;
+    else
+    {
+        while (str[i])
+            i++;
+        if (str[i-1] == 'f' && str != "+inf" && str != "-inf" && str != "inf")
+            str.resize(str.size() - 1);
+        std::stringstream s(str);
+        s >> num;
+    }
     std::cout << std::fixed << std::setprecision(1) << static_cast<float>(num) << "f" << std::endl;
 }
 
-void Cast::castToDouble(float num) {
+void Cast::castToDouble(std::string str) {
     std::cout << "double: ";
+    int i = 0;
+    float num;
+    if (str.size() == 3 && str[0] == '\'' && str[2] == '\'')
+        num = str[1] - 0;
+    else
+    {
+        while (str[i])
+            i++;
+        if (str[i-1] == 'f' && str != "+inf" && str != "-inf" && str != "inf")
+            str.resize(str.size() - 1);
+        std::stringstream s(str);
+        s >> num;
+    }
     std::cout << std::fixed << std::setprecision(1) << static_cast<double>(num) << std::endl;
 }
 
