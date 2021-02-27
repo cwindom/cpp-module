@@ -20,14 +20,11 @@ public:
     Cast(Cast const &copy);
     Cast &operator= (Cast const op);
 
-    float toCast(std::string str);
     void castToChar(std::string str);
     void castToInt(std::string str);
     void castToFloat(std::string str);
     void castToDouble(std::string str);
-    class ImpossibleException: public std::exception{
-        virtual const char* what() const throw();
-    };
+    void checkArgv(std::string str);
 };
 
 

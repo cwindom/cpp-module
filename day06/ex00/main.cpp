@@ -20,8 +20,6 @@ float: 42.0f
 double: 42.0
 */
 #include <iostream>
-#include <iomanip>
-#include <limits>
 #include "Cast.hpp"
 
 int main(int ac, char **av) {
@@ -35,15 +33,20 @@ int main(int ac, char **av) {
 //    std::string str = "+inff";
 //    std::string str = "nan";
 //    std::string str = "nanf";
-    a.castToChar(str);
-    a.castToInt(str);
-    a.castToFloat(str);
-    a.castToDouble(str);
-//    if (ac == 2)
-//    {
-//
-//    }
-//    else
-//        std::cout << "error, must be one argument" << std::endl;
+//    a.castToChar(str);
+//    a.castToInt(str);
+//    a.castToFloat(str);
+//    a.castToDouble(str);
+    if (ac == 2)
+    {
+        Cast a;
+        a.checkArgv(av[1]);
+        a.castToChar(av[1]);
+        a.castToInt(av[1]);
+        a.castToFloat(av[1]);
+        a.castToDouble(av[1]);
+    }
+    else
+        std::cout << "error, must be one argument" << std::endl;
     return 0;
 }
