@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/maria/Desktop/cpp-module/day07/ex02/Array.h
+iostream
+-
+
+/Users/maria/Desktop/cpp-module/day07/ex02/main.cpp
+Array.h
+/Users/maria/Desktop/cpp-module/day07/ex02/Array.h
+string
+-
+
