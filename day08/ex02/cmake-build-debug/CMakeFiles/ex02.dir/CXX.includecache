@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/maria/Desktop/cpp-module/day08/ex02/MutantStack.cpp
+
+/Users/maria/Desktop/cpp-module/day08/ex02/MutantStack.hpp
+iostream
+-
+stack
+-
+MutantStack.cpp
+/Users/maria/Desktop/cpp-module/day08/ex02/MutantStack.cpp
+
+/Users/maria/Desktop/cpp-module/day08/ex02/main.cpp
+iostream
+-
+list
+-
+MutantStack.hpp
+/Users/maria/Desktop/cpp-module/day08/ex02/MutantStack.hpp
+

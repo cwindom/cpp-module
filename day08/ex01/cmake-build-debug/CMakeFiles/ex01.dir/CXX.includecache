@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/maria/Desktop/cpp-module/day08/ex01/main.cpp
+span.hpp
+/Users/maria/Desktop/cpp-module/day08/ex01/span.hpp
+
+/Users/maria/Desktop/cpp-module/day08/ex01/span.hpp
+iostream
+-
+algorithm
+-
+vector
+-
+

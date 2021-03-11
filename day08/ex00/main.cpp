@@ -33,7 +33,7 @@ int main()
 		set.insert(i + 10);
 	try
 	{
-		std::cout << "With set: " << easyFind(set, 112) << std::endl;
+		std::cout << "With set: " << easyFind(set, 15) << std::endl;
 	}
 	catch (std::exception &e)
 	{
